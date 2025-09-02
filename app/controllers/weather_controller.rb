@@ -9,11 +9,6 @@ class WeatherController < ApplicationController
   def update
     validate_input!
 
-    if @error
-      render turbo_stream: updates
-      return
-    end
-
     results = WeatherRetriever.new(
       city: form_params[:city],
       state: form_params[:state],
@@ -25,6 +20,7 @@ class WeatherController < ApplicationController
     @cached = results[:cached]
 
     render turbo_stream: [
+      turbo_stream.update("error-message", partial: "error", locals: { error: nil }),
       turbo_stream.update("current-weather",
                             partial: "current_conditions",
                             locals: {
