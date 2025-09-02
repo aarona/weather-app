@@ -1,0 +1,10 @@
+<div id="current-conditions" class="card">
+  <% if cached %><div class="cached">CACHED</div><% end %>
+  <h2 class="title">Location</h1>
+  <p class="location"><%= current_weather.location['name'] %></p>
+  <h1><%= degree(current_weather.temperature) %></h1>
+  <p>
+    H:<%= degree(todays_forecast.temperature_high) %>
+    L:<%= degree(todays_forecast.temperature_low) %>
+  </p>
+</div>

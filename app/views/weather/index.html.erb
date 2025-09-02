@@ -1,0 +1,26 @@
+<div class="content">
+  <%= render partial: 'form' %>
+
+  <%= turbo_frame_tag 'error-message' do %>
+    <%= render partial: 'error', locals: { error: @error } %>
+  <% end %>
+
+  <%= turbo_frame_tag 'current-weather' do %>
+    <% if @current_weather %>
+    <%=
+      render partial: 'current_conditions',
+              locals: {
+                current_weather: @current_weather,
+                todays_forecast: @forecast.first,
+                cached: @cached
+              }
+    %>
+    <% end %>
+  <% end %>
+
+  <%= turbo_frame_tag 'daily-forecast' do %>
+    <% if @forecast %>
+      <%= render partial: 'daily_forecast', locals: { forecast: @forecast } %>
+    <% end %>
+  <% end %>
+</div>

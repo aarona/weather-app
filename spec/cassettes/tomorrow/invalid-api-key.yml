@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomorrow.io/v4/weather/realtime?apikey=invalid-api-key&location=95973
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 31 Aug 2025 05:57:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 977a4a051e20ed3a-SJC
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Via:
+      - 1.1 google
+      Cf-Apo-Via:
+      - origin,host
+      X-Kong-Response-Latency:
+      - '22'
+      X-Ratelimit-Remaining-Plan-5f857927f9d5bdc6c63abb67:
+      - '10'
+      X-Ratelimit-Remaining-Plan-5f96c370732c89cb4d9a98e8:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fa4047f4acee993fbd7399d:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fb2a269785f8043656f245e:
+      - '10'
+      X-Ratelimit-Remaining-Plan-600d6ce482ff404e9a7a4c0c:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d73bef98f624e9adcf465:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d742fdee75e4e9aab6661:
+      - '5'
+      X-Ratelimit-Remaining-Plan-6036283133bb2ff6d4bd82a7:
+      - '3'
+      X-Ratelimit-Remaining-Plan-606d86d0a26c4d7df907bc7a:
+      - '5'
+      X-Ratelimit-Remaining-Plan-609d458bdd3d437ff19fd44f:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60d46beae90c3b3549a59ff3:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00adf8d481f9421462962:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00d40803f8e9421c5a7f8:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60f58bbc299fbc36c91529aa:
+      - '5'
+      X-Ratelimit-Remaining-Plan-648b3f22ef567da8b7fb4599:
+      - '3'
+      X-Ratelimit-Remaining-Plan-649ab4540000000000b71412:
+      - '3'
+      X-Ratelimit-Remaining-Web-App:
+      - '500000'
+      Set-Cookie:
+      - __cf_bm=VeM8_bRO0EYcqPlXzQydf0FYGjAVG_iwYi.atHhVuOg-1756619833-1.0.1.1-ABU8YHPlHs6v6xFxoERlyThl9ErNh8XqF6lRJZyOrIPzqgD7vbzhkZechAzu9emoUEn_97O4nOAwsLTKpMHYGXOAOJEDYgQllZit5xiMWXg;
+        path=/; expires=Sun, 31-Aug-25 06:27:13 GMT; domain=.tomorrow.io; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=NNATqFXnQ2sbZ3diFOJeEWLl05bbsGj6FmMRtJiJtcI-1756619833272-0.0.1.1-604800000;
+        path=/; domain=.tomorrow.io; HttpOnly; Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"code":401001,"type":"Invalid Auth","message":"The method requires
+        authentication but it was not presented or is invalid."}'
+  recorded_at: Sun, 31 Aug 2025 05:57:13 GMT
+recorded_with: VCR 6.3.1

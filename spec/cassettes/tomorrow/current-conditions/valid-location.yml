@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomorrow.io/v4/weather/realtime?apikey=testing-api-token&location=95973
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Aug 2025 03:45:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 977988bd6b2f7e88-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - accept-encoding
+      Via:
+      - 1.1 google
+      Cf-Apo-Via:
+      - origin,host
+      X-Correlation-Id:
+      - d29ddcd6-a05d-4701-b970-e73854f039eb
+      X-Db-Credits-Cost:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '20'
+      X-Kong-Upstream-Latency:
+      - '123'
+      X-Ratelimit-Remaining-Plan-5f857927f9d5bdc6c63abb67:
+      - '10'
+      X-Ratelimit-Remaining-Plan-5f96c370732c89cb4d9a98e8:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fa4047f4acee993fbd7399d:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fb2a269785f8043656f245e:
+      - '10'
+      X-Ratelimit-Remaining-Plan-600d6ce482ff404e9a7a4c0c:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d73bef98f624e9adcf465:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d742fdee75e4e9aab6661:
+      - '5'
+      X-Ratelimit-Remaining-Plan-6036283133bb2ff6d4bd82a7:
+      - '3'
+      X-Ratelimit-Remaining-Plan-606d86d0a26c4d7df907bc7a:
+      - '5'
+      X-Ratelimit-Remaining-Plan-609d458bdd3d437ff19fd44f:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60d46beae90c3b3549a59ff3:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00adf8d481f9421462962:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00d40803f8e9421c5a7f8:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60f58bbc299fbc36c91529aa:
+      - '5'
+      X-Ratelimit-Remaining-Plan-648b3f22ef567da8b7fb4599:
+      - '3'
+      X-Ratelimit-Remaining-Plan-649ab4540000000000b71412:
+      - '3'
+      X-Ratelimit-Remaining-Web-App:
+      - '500000'
+      X-Request-Id:
+      - ef3d0538-267d-40b7-8300-f770fc63d11b
+      Set-Cookie:
+      - __cf_bm=Yq5ATiScSnbmu_Nca4mbPp1_ZL4rdSxIQZm2CyfTTdU-1756611916-1.0.1.1-qxYnjU0wv_WCG3NPbbB0iRmr4PhxyJOnOvsflAAUy2RirBPmGixn96SP5ZN.7Vhp6emEuC.sb6CbvL7RaKvBfG2cxQ.xdLMp_NlfDbk5gJM;
+        path=/; expires=Sun, 31-Aug-25 04:15:16 GMT; domain=.tomorrow.io; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=1ozPr_L2c9juxkssKaN8Y7eTPCbPXYAsP5JENdGhGvM-1756611916694-0.0.1.1-604800000;
+        path=/; domain=.tomorrow.io; HttpOnly; Secure; SameSite=None
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"time":"2025-08-31T03:45:00Z","values":{"altimeterSetting":1010.47,"cloudBase":16,"cloudCeiling":16,"cloudCover":1,"dewPoint":14.7,"freezingRainIntensity":0,"humidity":37,"precipitationProbability":0,"pressureSeaLevel":1011.33,"pressureSurfaceLevel":1003.66,"rainIntensity":0,"sleetIntensity":0,"snowIntensity":0,"temperature":31.2,"temperatureApparent":30.7,"uvHealthConcern":0,"uvIndex":0,"visibility":16,"weatherCode":1000,"windDirection":166,"windGust":3.5,"windSpeed":1.2}},"location":{"lat":39.7662239074707,"lon":-121.85606384277344,"name":"Chico,
+        Butte County, California, 95973, United States","type":"postcode"}}'
+  recorded_at: Sun, 31 Aug 2025 03:45:16 GMT
+recorded_with: VCR 6.3.1

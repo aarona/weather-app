@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "Building Docker image for local deployment..."
+
+# Build the Docker image
+docker build -t weather_app:latest .
+
+echo "Stopping and removing existing containers..."
+
+# Stop and remove existing containers
+docker stop weather_app-web || true
+docker rm weather_app-web || true
+
+echo "Starting weather app container..."
+
+# Create volume for storage
+docker volume create weather_app_storage || true
+
+# Run the container
+docker run -d \
+  --name weather_app-web \
+  --restart unless-stopped \
+  -p 3000:80 \
+  -v weather_app_storage:/rails/storage \
+  -e RAILS_MASTER_KEY="$(cat config/master.key)" \
+  -e TOMORROW_API_KEY="$(grep TOMORROW_API_KEY .env | cut -d '=' -f2)" \
+  -e SOLID_QUEUE_IN_PUMA=true \
+  weather_app:latest
+
+echo "Deployment complete!"
+echo "Your app should be available at: http://localhost:3000"
+echo "Check container status: docker ps"
+echo "View logs: docker logs weather_app-web"
+echo "Stop app: docker stop weather_app-web"

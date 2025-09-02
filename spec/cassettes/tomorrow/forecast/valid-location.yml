@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomorrow.io/v4/weather/forecast?apikey=testing-api-token&location=95973&timesteps=1d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Aug 2025 06:30:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 977a7a734dcc7acd-SJC
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - accept-encoding
+      Via:
+      - 1.1 google
+      Cf-Apo-Via:
+      - origin,host
+      X-Correlation-Id:
+      - ea41cb1d-ca90-4362-bbc5-daf455bcbbe5
+      X-Db-Credits-Cost:
+      - '11'
+      X-Kong-Proxy-Latency:
+      - '33'
+      X-Kong-Upstream-Latency:
+      - '108'
+      X-Ratelimit-Remaining-Plan-5f857927f9d5bdc6c63abb67:
+      - '10'
+      X-Ratelimit-Remaining-Plan-5f96c370732c89cb4d9a98e8:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fa4047f4acee993fbd7399d:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fb2a269785f8043656f245e:
+      - '10'
+      X-Ratelimit-Remaining-Plan-600d6ce482ff404e9a7a4c0c:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d73bef98f624e9adcf465:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d742fdee75e4e9aab6661:
+      - '5'
+      X-Ratelimit-Remaining-Plan-6036283133bb2ff6d4bd82a7:
+      - '3'
+      X-Ratelimit-Remaining-Plan-606d86d0a26c4d7df907bc7a:
+      - '5'
+      X-Ratelimit-Remaining-Plan-609d458bdd3d437ff19fd44f:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60d46beae90c3b3549a59ff3:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00adf8d481f9421462962:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00d40803f8e9421c5a7f8:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60f58bbc299fbc36c91529aa:
+      - '5'
+      X-Ratelimit-Remaining-Plan-648b3f22ef567da8b7fb4599:
+      - '3'
+      X-Ratelimit-Remaining-Plan-649ab4540000000000b71412:
+      - '3'
+      X-Ratelimit-Remaining-Web-App:
+      - '500000'
+      X-Request-Id:
+      - 8d829b7f-0439-4d98-93e4-7b99cc1865d3
+      Set-Cookie:
+      - __cf_bm=aRYXDdMw9WH0NBdXAwlcgqpdAa0NQ0GjwXPBG26ZeOs-1756621817-1.0.1.1-8YNKrbVH9jnjevJNZot5Ptnn0uXhwpfDj7vGKGnu4eD2qBWiHIR5crC3MdpCCmhpVEvKqfPe0dSedmxPoIkPnFuaHIO27fdpk.wgugaamzc;
+        path=/; expires=Sun, 31-Aug-25 07:00:17 GMT; domain=.tomorrow.io; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=nt6G34eHTt2h8pKTiwTp0agXiP6iNgy7G55zoEHSuPs-1756621817098-0.0.1.1-604800000;
+        path=/; domain=.tomorrow.io; HttpOnly; Secure; SameSite=None
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timelines":{"daily":[{"time":"2025-08-30T13:00:00Z","values":{"altimeterSettingAvg":1012.49,"altimeterSettingMax":1015.29,"altimeterSettingMin":1010.33,"cloudBaseAvg":12,"cloudBaseMax":16,"cloudBaseMin":0,"cloudCeilingAvg":12,"cloudCeilingMax":16,"cloudCeilingMin":0,"cloudCoverAvg":0,"cloudCoverMax":3,"cloudCoverMin":0,"dewPointAvg":10.3,"dewPointMax":14.1,"dewPointMin":5.8,"evapotranspirationAvg":0.265,"evapotranspirationMax":0.731,"evapotranspirationMin":0.042,"evapotranspirationSum":6.36,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":34,"humidityMax":69,"humidityMin":18,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":"2025-08-30T21:07:54Z","moonsetTime":"2025-08-30T05:39:59Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1012.92,"pressureSeaLevelMax":1015.87,"pressureSeaLevelMin":1011.09,"pressureSurfaceLevelAvg":1005.52,"pressureSurfaceLevelMax":1008.46,"pressureSurfaceLevelMin":1003.53,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetAccumulationAvg":0,"sleetAccumulationLweAvg":0,"sleetAccumulationLweMax":0,"sleetAccumulationLweMin":0,"sleetAccumulationLweSum":0,"sleetAccumulationMax":0,"sleetAccumulationMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowDepthAvg":0,"snowDepthMax":0,"snowDepthMin":0,"snowDepthSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-08-30T13:34:00Z","sunsetTime":"2025-08-31T02:41:00Z","temperatureApparentAvg":27.9,"temperatureApparentMax":35.8,"temperatureApparentMin":18.1,"temperatureAvg":28.6,"temperatureMax":37.4,"temperatureMin":18.1,"uvHealthConcernAvg":1,"uvHealthConcernMax":3,"uvHealthConcernMin":0,"uvIndexAvg":2,"uvIndexMax":7,"uvIndexMin":0,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1000,"weatherCodeMin":1000,"windDirectionAvg":158,"windGustAvg":2.9,"windGustMax":4.3,"windGustMin":1.7,"windSpeedAvg":1.5,"windSpeedMax":3.4,"windSpeedMin":0}},{"time":"2025-08-31T13:00:00Z","values":{"altimeterSettingAvg":1011.63,"altimeterSettingMax":1013.03,"altimeterSettingMin":1010.37,"cloudBaseAvg":1.4,"cloudBaseMax":2.7,"cloudBaseMin":0,"cloudCeilingAvg":1.3,"cloudCeilingMax":10.3,"cloudCeilingMin":0,"cloudCoverAvg":63,"cloudCoverMax":100,"cloudCoverMin":0,"dewPointAvg":2.4,"dewPointMax":7.5,"dewPointMin":-2.3,"evapotranspirationAvg":0.23,"evapotranspirationMax":0.38,"evapotranspirationMin":0.064,"evapotranspirationSum":5.512,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":18,"humidityMax":37,"humidityMin":8,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":"2025-08-31T22:07:36Z","moonsetTime":"2025-08-31T06:15:27Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1011.81,"pressureSeaLevelMax":1013.04,"pressureSeaLevelMin":1010.65,"pressureSurfaceLevelAvg":1004.2,"pressureSurfaceLevelMax":1005.59,"pressureSurfaceLevelMin":1002.95,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowDepthAvg":0,"snowDepthMax":0,"snowDepthMin":0,"snowDepthSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-08-31T13:35:00Z","sunsetTime":"2025-09-01T02:39:00Z","temperatureApparentAvg":28.3,"temperatureApparentMax":35.5,"temperatureApparentMin":20.2,"temperatureAvg":29.8,"temperatureMax":38.5,"temperatureMin":20.2,"uvHealthConcernAvg":1,"uvHealthConcernMax":3,"uvHealthConcernMin":0,"uvIndexAvg":2,"uvIndexMax":7,"uvIndexMin":0,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1001,"weatherCodeMin":1001,"windDirectionAvg":155,"windGustAvg":4.2,"windGustMax":6.3,"windGustMin":1.1,"windSpeedAvg":2.7,"windSpeedMax":4.9,"windSpeedMin":0.3}},{"time":"2025-09-01T13:00:00Z","values":{"altimeterSettingAvg":1011.2,"altimeterSettingMax":1013.71,"altimeterSettingMin":1009.4,"cloudBaseAvg":0.2,"cloudBaseMax":5.1,"cloudBaseMin":0,"cloudCeilingAvg":0,"cloudCeilingMax":0,"cloudCeilingMin":0,"cloudCoverAvg":2,"cloudCoverMax":14,"cloudCoverMin":0,"dewPointAvg":4.5,"dewPointMax":7.6,"dewPointMin":1.2,"evapotranspirationAvg":0.176,"evapotranspirationMax":0.333,"evapotranspirationMin":0.095,"evapotranspirationSum":4.23,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":21,"humidityMax":38,"humidityMin":10,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":"2025-09-01T23:02:32Z","moonsetTime":"2025-09-01T07:00:15Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1011.35,"pressureSeaLevelMax":1013.95,"pressureSeaLevelMin":1009.4,"pressureSurfaceLevelAvg":1002.46,"pressureSurfaceLevelMax":1006.27,"pressureSurfaceLevelMin":998.47,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowDepthAvg":0,"snowDepthMax":0,"snowDepthMin":0,"snowDepthSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-09-01T13:36:00Z","sunsetTime":"2025-09-02T02:38:00Z","temperatureApparentAvg":29.6,"temperatureApparentMax":36.7,"temperatureApparentMin":19.5,"temperatureAvg":31,"temperatureMax":39.6,"temperatureMin":19.5,"uvHealthConcernAvg":1,"uvHealthConcernMax":3,"uvHealthConcernMin":0,"uvIndexAvg":2,"uvIndexMax":8,"uvIndexMin":0,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1000,"weatherCodeMin":1000,"windDirectionAvg":137,"windGustAvg":3.5,"windGustMax":5.6,"windGustMin":0.7,"windSpeedAvg":2,"windSpeedMax":3.3,"windSpeedMin":0.3}},{"time":"2025-09-02T13:00:00Z","values":{"altimeterSettingAvg":1010.58,"altimeterSettingMax":1014.3,"altimeterSettingMin":1007.76,"cloudBaseAvg":5.8,"cloudBaseMax":8.9,"cloudBaseMin":4.1,"cloudCeilingAvg":4.2,"cloudCeilingMax":10,"cloudCeilingMin":0,"cloudCoverAvg":57,"cloudCoverMax":100,"cloudCoverMin":2,"dewPointAvg":7.2,"dewPointMax":10.4,"dewPointMin":5.5,"evapotranspirationAvg":0.243,"evapotranspirationMax":0.414,"evapotranspirationMin":0.106,"evapotranspirationSum":5.836,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":25,"humidityMax":55,"humidityMin":13,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":"2025-09-02T23:51:56Z","moonsetTime":"2025-09-02T07:52:33Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1010.58,"pressureSeaLevelMax":1014.55,"pressureSeaLevelMin":1007.59,"pressureSurfaceLevelAvg":999.64,"pressureSurfaceLevelMax":1003.33,"pressureSurfaceLevelMin":996.84,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-09-02T13:37:00Z","sunsetTime":"2025-09-03T02:36:00Z","temperatureApparentAvg":29.7,"temperatureApparentMax":37.8,"temperatureApparentMin":19.7,"temperatureAvg":31,"temperatureMax":40,"temperatureMin":19.7,"uvHealthConcernAvg":1,"uvHealthConcernMax":3,"uvHealthConcernMin":0,"uvIndexAvg":2,"uvIndexMax":8,"uvIndexMin":0,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1001,"weatherCodeMin":1001,"windDirectionAvg":170,"windGustAvg":6.2,"windGustMax":9.3,"windGustMin":1,"windSpeedAvg":3,"windSpeedMax":5.2,"windSpeedMin":0.6}},{"time":"2025-09-03T13:00:00Z","values":{"altimeterSettingAvg":1012.37,"altimeterSettingMax":1015.84,"altimeterSettingMin":1009.4,"cloudBaseAvg":1.2,"cloudBaseMax":9.5,"cloudBaseMin":0,"cloudCeilingAvg":1.4,"cloudCeilingMax":11.1,"cloudCeilingMin":0,"cloudCoverAvg":15,"cloudCoverMax":99,"cloudCoverMin":0,"dewPointAvg":6.4,"dewPointMax":12.3,"dewPointMin":-0.3,"evapotranspirationAvg":0.183,"evapotranspirationMax":0.262,"evapotranspirationMin":0.111,"evapotranspirationSum":4.384,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":31,"humidityMax":67,"humidityMin":13,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":null,"moonsetTime":"2025-09-03T08:53:18Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1012.41,"pressureSeaLevelMax":1016.05,"pressureSeaLevelMin":1009.35,"pressureSurfaceLevelAvg":1001.42,"pressureSurfaceLevelMax":1004.85,"pressureSurfaceLevelMin":998.47,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-09-03T13:38:00Z","sunsetTime":"2025-09-04T02:35:00Z","temperatureApparentAvg":26.1,"temperatureApparentMax":33.4,"temperatureApparentMin":18.5,"temperatureAvg":26.9,"temperatureMax":35.7,"temperatureMin":18.5,"uvHealthConcernAvg":1,"uvHealthConcernMax":3,"uvHealthConcernMin":0,"uvIndexAvg":2,"uvIndexMax":7,"uvIndexMin":0,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1000,"weatherCodeMin":1000,"windDirectionAvg":166,"windGustAvg":4.3,"windGustMax":5.9,"windGustMin":2,"windSpeedAvg":1.8,"windSpeedMax":2.5,"windSpeedMin":1}},{"time":"2025-09-04T13:00:00Z","values":{"altimeterSettingAvg":1010.19,"altimeterSettingMax":1012.46,"altimeterSettingMin":1008.08,"cloudBaseAvg":4.4,"cloudBaseMax":9.6,"cloudBaseMin":0,"cloudCeilingAvg":3.7,"cloudCeilingMax":10.8,"cloudCeilingMin":0,"cloudCoverAvg":53,"cloudCoverMax":99,"cloudCoverMin":0,"dewPointAvg":3.4,"dewPointMax":8,"dewPointMin":-1.3,"evapotranspirationAvg":0.209,"evapotranspirationMax":0.328,"evapotranspirationMin":0.126,"evapotranspirationSum":5.008,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":21,"humidityMax":37,"humidityMin":8,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":"2025-09-04T00:33:55Z","moonsetTime":"2025-09-04T09:59:51Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1010.21,"pressureSeaLevelMax":1012.58,"pressureSeaLevelMin":1008,"pressureSurfaceLevelAvg":999.25,"pressureSurfaceLevelMax":1001.5,"pressureSurfaceLevelMin":997.16,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-09-04T13:39:00Z","sunsetTime":"2025-09-05T02:33:00Z","temperatureApparentAvg":28,"temperatureApparentMax":34.8,"temperatureApparentMin":21.2,"temperatureAvg":29.4,"temperatureMax":37.8,"temperatureMin":21.2,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1001,"weatherCodeMin":1001,"windDirectionAvg":158,"windGustAvg":4.2,"windGustMax":7,"windGustMin":0.7,"windSpeedAvg":1.8,"windSpeedMax":3.2,"windSpeedMin":0.4}},{"time":"2025-09-05T13:00:00Z","values":{"altimeterSettingAvg":1011.02,"altimeterSettingMax":1013.34,"altimeterSettingMin":1008.6,"cloudBaseAvg":2,"cloudBaseMax":7.9,"cloudBaseMin":0,"cloudCeilingAvg":0,"cloudCeilingMax":0,"cloudCeilingMin":0,"cloudCoverAvg":7,"cloudCoverMax":23,"cloudCoverMin":0,"dewPointAvg":7.3,"dewPointMax":11.4,"dewPointMin":4,"evapotranspirationAvg":0.248,"evapotranspirationMax":0.367,"evapotranspirationMin":0.126,"evapotranspirationSum":5.964,"freezingRainIntensityAvg":0,"freezingRainIntensityMax":0,"freezingRainIntensityMin":0,"humidityAvg":30,"humidityMax":61,"humidityMin":13,"iceAccumulationAvg":0,"iceAccumulationLweAvg":0,"iceAccumulationLweMax":0,"iceAccumulationLweMin":0,"iceAccumulationLweSum":0,"iceAccumulationMax":0,"iceAccumulationMin":0,"iceAccumulationSum":0,"moonriseTime":"2025-09-05T01:08:15Z","moonsetTime":"2025-09-05T11:08:39Z","precipitationProbabilityAvg":0,"precipitationProbabilityMax":0,"precipitationProbabilityMin":0,"pressureSeaLevelAvg":1011.09,"pressureSeaLevelMax":1013.55,"pressureSeaLevelMin":1008.56,"pressureSurfaceLevelAvg":1000.08,"pressureSurfaceLevelMax":1002.38,"pressureSurfaceLevelMin":997.68,"rainAccumulationAvg":0,"rainAccumulationMax":0,"rainAccumulationMin":0,"rainAccumulationSum":0,"rainIntensityAvg":0,"rainIntensityMax":0,"rainIntensityMin":0,"sleetIntensityAvg":0,"sleetIntensityMax":0,"sleetIntensityMin":0,"snowAccumulationAvg":0,"snowAccumulationLweAvg":0,"snowAccumulationLweMax":0,"snowAccumulationLweMin":0,"snowAccumulationLweSum":0,"snowAccumulationMax":0,"snowAccumulationMin":0,"snowAccumulationSum":0,"snowIntensityAvg":0,"snowIntensityMax":0,"snowIntensityMin":0,"sunriseTime":"2025-09-05T13:40:00Z","sunsetTime":"2025-09-06T02:32:00Z","temperatureApparentAvg":27.3,"temperatureApparentMax":34.4,"temperatureApparentMin":19.2,"temperatureAvg":28.5,"temperatureMax":37,"temperatureMin":19.2,"visibilityAvg":16,"visibilityMax":16,"visibilityMin":16,"weatherCodeMax":1000,"weatherCodeMin":1000,"windDirectionAvg":160,"windGustAvg":5.9,"windGustMax":8.6,"windGustMin":0.7,"windSpeedAvg":2.7,"windSpeedMax":4.9,"windSpeedMin":0.4}}]},"location":{"lat":39.7662239074707,"lon":-121.85606384277344,"name":"Chico,
+        Butte County, California, 95973, United States","type":"postcode"}}'
+  recorded_at: Sun, 31 Aug 2025 06:30:17 GMT
+recorded_with: VCR 6.3.1

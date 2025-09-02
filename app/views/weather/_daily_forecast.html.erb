@@ -1,0 +1,18 @@
+<div id="forecast" class="card">
+  <h2 class="title">Forecast</h2>
+  <% forecast.each do |day| %>
+  <div class="day">
+    <div>
+      <% if day.time == Date.today %>
+        Today
+      <% else %>
+        <%= day.time.strftime("%A")%>
+      <% end %>
+    </div>
+    <div>
+      H:<%= degree(day.temperature_high) %>
+      L:<%= degree(day.temperature_low) %>
+    </div>
+  </div>
+  <% end %>
+</div>

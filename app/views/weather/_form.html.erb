@@ -1,0 +1,21 @@
+<div id="form" class="card">
+  <%= form_with method: 'PUT' do |form| %>
+    <div>
+      <label for="address">Address:</label>
+      <%= form.text_field :address %>
+    </div>
+    <div>
+      <label for="city">City:</label>
+      <%= form.text_field :city, { required: true } %>
+    </div>
+    <div>
+      <label for="state">State:</label>
+      <%= form.text_field :state, { required: true } %>
+    </div>
+    <div>
+      <label for="Zip Code:">Zip Code:</label>
+      <%= form.number_field :zip_code, { required: true } %>
+    </div>
+    <div><%= form.submit 'Get the Weather!' %></div>
+  <% end %>
+</div>

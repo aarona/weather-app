@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomorrow.io/v4/weather/realtime?apikey=testing-api-token&location=Anywhereville,%20USA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 31 Aug 2025 05:26:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '225'
+      Connection:
+      - keep-alive
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 977a1dba1cdc090c-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Via:
+      - 1.1 google
+      Cf-Apo-Via:
+      - origin,host
+      X-Correlation-Id:
+      - 52268ed2-c93d-4292-9e5e-9cb4064d5ad4
+      X-Kong-Proxy-Latency:
+      - '14'
+      X-Kong-Upstream-Latency:
+      - '30'
+      X-Ratelimit-Remaining-Plan-5f857927f9d5bdc6c63abb67:
+      - '10'
+      X-Ratelimit-Remaining-Plan-5f96c370732c89cb4d9a98e8:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fa4047f4acee993fbd7399d:
+      - '3'
+      X-Ratelimit-Remaining-Plan-5fb2a269785f8043656f245e:
+      - '10'
+      X-Ratelimit-Remaining-Plan-600d6ce482ff404e9a7a4c0c:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d73bef98f624e9adcf465:
+      - '5'
+      X-Ratelimit-Remaining-Plan-600d742fdee75e4e9aab6661:
+      - '5'
+      X-Ratelimit-Remaining-Plan-6036283133bb2ff6d4bd82a7:
+      - '3'
+      X-Ratelimit-Remaining-Plan-606d86d0a26c4d7df907bc7a:
+      - '5'
+      X-Ratelimit-Remaining-Plan-609d458bdd3d437ff19fd44f:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60d46beae90c3b3549a59ff3:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00adf8d481f9421462962:
+      - '3'
+      X-Ratelimit-Remaining-Plan-60f00d40803f8e9421c5a7f8:
+      - '5'
+      X-Ratelimit-Remaining-Plan-60f58bbc299fbc36c91529aa:
+      - '5'
+      X-Ratelimit-Remaining-Plan-648b3f22ef567da8b7fb4599:
+      - '3'
+      X-Ratelimit-Remaining-Plan-649ab4540000000000b71412:
+      - '3'
+      X-Ratelimit-Remaining-Web-App:
+      - '500000'
+      X-Request-Id:
+      - 12e15940-d9ee-4f57-9141-8a5d5e7bfcff
+      Set-Cookie:
+      - __cf_bm=toUfQ__cDM8FX0XMDkJ5MfKMcUgHILG6RBuWDDwMKzg-1756618019-1.0.1.1-5PLMg1KOIu54to6jhnBGso0ON7qiMTxlEYGaWzTJcqha7.1htAWPf.TfPCPGN4NcszvRb42sLeFBrlnHgMGYWPsQxoLq9X2qsa27PH5OkMA;
+        path=/; expires=Sun, 31-Aug-25 05:56:59 GMT; domain=.tomorrow.io; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=0UjAnRHE.35OD7bEGgtl4AZPTbyw0siYqvlR3xDUgUo-1756618019037-0.0.1.1-604800000;
+        path=/; domain=.tomorrow.io; HttpOnly; Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"code":400001,"type":"Invalid Query Parameters","message":"The entries
+        provided as query parameters were not valid for the request. Fix parameters
+        and try again: ''location'' - failed to parse location, cannot parse latitude"}'
+  recorded_at: Sun, 31 Aug 2025 05:26:59 GMT
+recorded_with: VCR 6.3.1

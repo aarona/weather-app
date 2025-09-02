@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: rgb(214, 224, 242);
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 0.5rem 0;
+}
+
+h2 {
+  padding-bottom: 0.5rem;
+}
+
+h2.title {
+  text-align: center;
+}
+
+p {
+  font-weight: lighter;
+  color: #666;
+}
+
+.content {
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#current-conditions {
+  text-align: center;
+}
+
+#current-conditions .location {
+  padding: 0 1.5rem;
+}
+
+#current-conditions .cached {
+  background-color: aquamarine;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
+#form div {
+  padding: 0.5rem 0;
+}
+
+#form input {
+  width: 100%;
+}
+
+.day {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.day h2 {
+  text-align: center;
+}
