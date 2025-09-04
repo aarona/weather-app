@@ -100,14 +100,14 @@ describe WeatherRetriever do
         Rails.cache.write(zip_code, cached_data)
       end
 
-      it 'should call the API' do
+      it 'should not call the API' do
         expect(api).to_not receive(:current_conditions)
         expect(api).to_not receive(:forecast)
 
         subject.retrieve
       end
 
-      it 'should indicate that the data returned was not cached data' do
+      it 'should indicate that the data returned was cached data' do
         result = subject.retrieve
 
         expect(result[:cached]).to eq true
